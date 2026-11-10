@@ -163,3 +163,7 @@ script:
 cd test-photos
 python3 ../photo-collage.py
 ```
+
+## Disclaimer
+
+The project is fully "wibe-coded" with Claude Opus 5.5 (version 2.1.322). I do not even understand the generated code, but the project generates functional results and solved a problem for me. It might as well be useful for someone else 👍
