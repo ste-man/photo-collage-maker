@@ -47,7 +47,7 @@ pip install pillow-heif   # HEIC / HEIF photos (iPhone)
 pip install rawpy         # camera RAW files
 ```
 
-Then download `photo_collage.py`. No further installation is needed.
+Then download `photo-collage.py`. No further installation is needed.
 
 ## Usage
 
@@ -55,7 +55,7 @@ Go to the folder that contains your photos and run the script:
 
 ```bash
 cd ~/Pictures/holiday-2026
-python3 /path/to/photo_collage.py
+python3 /path/to/photo-collage.py
 ```
 
 The PDF is saved in that folder and named after it, for example
@@ -69,7 +69,7 @@ before `img10`. Files that cannot be read are skipped with a warning.
 **Default:** about 3 rows per page on A4 portrait, 10 mm margin, 1 mm spacing:
 
 ```bash
-python3 photo_collage.py
+python3 photo-collage.py
 ```
 
 ![Default rows layout](docs/images/example-rows.png)
@@ -77,7 +77,7 @@ python3 photo_collage.py
 **Columns:** about 4 columns per page on landscape paper:
 
 ```bash
-python3 photo_collage.py --columns 4 --paper-orientation landscape
+python3 photo-collage.py --columns 4 --paper-orientation landscape
 ```
 
 ![Columns layout on landscape paper](docs/images/example-columns.png)
@@ -86,7 +86,7 @@ python3 photo_collage.py --columns 4 --paper-orientation landscape
 filled completely:
 
 ```bash
-python3 photo_collage.py --rows 4 --max-crop 10
+python3 photo-collage.py --rows 4 --max-crop 10
 ```
 
 ![Rows layout with cropping, every page completely filled](docs/images/example-max-crop.png)
@@ -95,7 +95,7 @@ python3 photo_collage.py --rows 4 --max-crop 10
 at the cost of some empty space between them:
 
 ```bash
-python3 photo_collage.py --rows 4 --evenness 1
+python3 photo-collage.py --rows 4 --evenness 1
 ```
 
 ![Rows layout with more even row heights](docs/images/example-evenness.png)
@@ -103,7 +103,7 @@ python3 photo_collage.py --rows 4 --evenness 1
 **Styled:** dark background, white borders and wider spacing:
 
 ```bash
-python3 photo_collage.py --rows 4 --background-color "#1E1E1E" \
+python3 photo-collage.py --rows 4 --background-color "#1E1E1E" \
     --border-color "#FFFFFF" --image-border 1 --spacing 4 --paper-margin 8
 ```
 
@@ -129,7 +129,7 @@ python3 photo_collage.py --rows 4 --background-color "#1E1E1E" \
 | `--background-color HEX` | `#FFFFFF` | Page background colour. |
 | `--border-color HEX` | `#000000` | Image border colour. |
 
-Run `python3 photo_collage.py --help` for the full help text.
+Run `python3 photo-collage.py --help` for the full help text.
 
 ## How the layout works
 
@@ -161,5 +161,5 @@ script:
 
 ```bash
 cd test-photos
-python3 ../photo_collage.py
+python3 ../photo-collage.py
 ```
